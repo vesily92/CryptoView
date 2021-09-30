@@ -47,48 +47,48 @@ class RateCell: UITableViewCell {
 }
     
 extension RateCell {
-    
-    private func format(_ label: String?, withPostfix: String) -> String {
+
+    func format(_ label: String?, withPostfix: String) -> String {
         guard let label = label else {
             return ""
         }
-        
+
         return label + withPostfix
     }
-    
-    private func format(_ price: String?, and percent: String? = nil, withPostfix: String? = nil) -> String {
+
+    func format(_ price: String?, and percent: String? = nil, withPostfix: String? = nil) -> String {
         guard let price = price else {
             return ""
         }
         let priceValue = (price as NSString).floatValue
         var formattedPrice = String(format: "%.2f", priceValue)
-        
+
         guard let percent = percent else {
             return formattedPrice
         }
-        
+
         let percentValue = (percent as NSString).floatValue
         var formattedPercent = String(format: "%.2f", percentValue)
-    
+
         if round(100 * priceValue) / 100 == 0 && formattedPrice.first == "-" {
             formattedPrice.removeFirst()
             formattedPercent.removeFirst()
         }
         var formatted = formattedPrice + " " + formattedPercent
-        
+
         if let postfix = withPostfix {
             formatted += postfix
         }
-        
+
         return formatted
     }
-    
-    private func getColor(of price: String?) -> UIColor? {
+
+    func getColor(of price: String?) -> UIColor? {
         guard let price = price else {
             return nil
         }
         let formatted = format(price)
-        
+
         if (formatted as NSString).floatValue > 0 {
             return .systemGreen
         } else if (formatted as NSString).floatValue < 0 {

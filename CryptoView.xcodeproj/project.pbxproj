@@ -16,7 +16,6 @@
 		7B50F2C22702F480002FF03D /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50F2C12702F480002FF03D /* ExchangeRate.swift */; };
 		7B50F2C42702F6A2002FF03D /* RatesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50F2C32702F6A2002FF03D /* RatesListViewController.swift */; };
 		7B50F2C62702FC0E002FF03D /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50F2C52702FC0E002FF03D /* RateCell.swift */; };
-		7B50F2CA27046526002FF03D /* DetailedRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50F2C927046526002FF03D /* DetailedRateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		7B50F2C12702F480002FF03D /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		7B50F2C32702F6A2002FF03D /* RatesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesListViewController.swift; sourceTree = "<group>"; };
 		7B50F2C52702FC0E002FF03D /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
-		7B50F2C927046526002FF03D /* DetailedRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedRateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 			children = (
 				7B50F2C32702F6A2002FF03D /* RatesListViewController.swift */,
 				7B50F2C52702FC0E002FF03D /* RateCell.swift */,
-				7B50F2C927046526002FF03D /* DetailedRateViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,7 +195,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B50F2CA27046526002FF03D /* DetailedRateViewController.swift in Sources */,
 				7B50F2C02702F3DF002FF03D /* NetworkManager.swift in Sources */,
 				7B50F2C42702F6A2002FF03D /* RatesListViewController.swift in Sources */,
 				7B50F2C22702F480002FF03D /* ExchangeRate.swift in Sources */,

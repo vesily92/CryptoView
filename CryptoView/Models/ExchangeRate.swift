@@ -110,3 +110,7 @@ struct VolumeTransparency: Decodable {
         case volumeChangePct = "volume_change_pct"
     }
 }
+
+struct Candles {
+    
+}
